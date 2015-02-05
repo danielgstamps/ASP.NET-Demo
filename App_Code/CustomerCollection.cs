@@ -63,6 +63,6 @@ public class CustomerCollection
             HttpContext.Current.Session["CustomerList"] = new CustomerCollection();
         }
 
-        return (CustomerCollection)HttpContext.Current.Session["CustomerList"];
+        return (CustomerCollection) HttpContext.Current.Session["CustomerList"];
     }
 }
