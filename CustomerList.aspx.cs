@@ -73,4 +73,9 @@ public partial class CustomerList : System.Web.UI.Page
         this.lblMessage.ForeColor = Color.Green;
         this.lblMessage.Text = this._selectedCustomer.Name + " successfully added to the Contact List.";
     }
+
+    protected void btnViewContacts_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("ContactList.aspx");
+    }
 }
