@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -57,4 +58,19 @@ public partial class CustomerList : System.Web.UI.Page
         this.lblEmail.Text = this._selectedCustomer.Email;
     }
 
+    protected void btnAddContact_Click(object sender, EventArgs e)
+    {
+        var customers = CustomerCollection.GetCustomers();
+
+        if (customers[this._selectedCustomer.Name] != null)
+        {
+            this.lblMessage.ForeColor = Color.Red;
+            this.lblMessage.Text = this._selectedCustomer.Name + " is already in the Contact List.";
+            return;
+        }
+
+        customers.AddItem(this._selectedCustomer);
+        this.lblMessage.ForeColor = Color.Green;
+        this.lblMessage.Text = this._selectedCustomer.Name + " successfully added to the Contact List.";
+    }
 }
