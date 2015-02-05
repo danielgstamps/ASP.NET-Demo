@@ -75,5 +75,10 @@
             </asp:TableCell>
         </asp:TableRow>
     </asp:Table>
+    <p>
+        &nbsp;</p>
+    <asp:Button ID="Button1" runat="server" Text="Button" />
+&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Button2" runat="server" Text="Button" />
 </body>
 </html>
