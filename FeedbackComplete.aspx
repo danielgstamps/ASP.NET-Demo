@@ -18,10 +18,8 @@
             <asp:Label ID="lblContact" runat="server"></asp:Label>
             <br />
             <br />
-            <asp:Button ID="btnBack" runat="server" OnClick="btnBack_Click" Text="Back to Feedback Submission" />
-  
+            <asp:Button ID="btnBack" runat="server" OnClick="btnBack_Click" Text="Back to Feedback Submission" /> 
         </form>  
-    </section>
-    
+    </section>   
 </body>
 </html>

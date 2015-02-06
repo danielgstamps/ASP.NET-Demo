@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Activities.Expressions;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Web;
-using System.Web.DynamicData;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 public partial class ContactList : System.Web.UI.Page
 {

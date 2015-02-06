@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Web;
+﻿using System.Diagnostics;
 
 /// <summary>
 /// Summary description for Feedback
@@ -97,11 +93,6 @@ public class Feedback
             this._description = value;
         }
     }
-
-	public Feedback()
-	{
-		//Not sure if we need a constructor? 
-	}
 
     public string FormatFeedback()
     {

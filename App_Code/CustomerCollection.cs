@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.ServiceModel.Channels;
 using System.Web;
 
 /// <summary>
@@ -11,7 +7,7 @@ using System.Web;
 /// </summary>
 public class CustomerCollection
 {
-    private List<Customer> _customerCollection;
+    private readonly List<Customer> _customerCollection;
 
     public CustomerCollection()
     {

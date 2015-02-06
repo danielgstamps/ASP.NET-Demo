@@ -11,8 +11,7 @@
         <h1>Digital Upscale Manager for Ballgames</h1>
         <h2>Managing Ballgames with Technology</h2>
         <p><br/><br/></p>
-    </header>
-    
+    </header>   
     <section>
         <form id="form1" runat="server">
             <asp:Label ID="lblContacts" runat="server" Text="Contacts:"></asp:Label>
@@ -27,12 +26,8 @@
             <br />
             <asp:Button ID="btnRemoveCustomer" runat="server" Text="Remove Customer" OnClick="btnRemoveCustomer_Click" />
             <asp:Button ID="btnClear" runat="server" Text="Clear List" OnClick="btnClear_Click" Width="89px" />
-    
-            <br />
-    
+            <br /> 
         </form>
-
-    </section>
-  
+    </section> 
 </body>
 </html>
