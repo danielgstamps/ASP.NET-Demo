@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Web;
 
 /// <summary>
 /// Summary description for Description
@@ -97,16 +94,4 @@ public class Description
             this._contactMethod = value;
         }
     }
-
-
-
-
-
-
-	public Description()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
 }

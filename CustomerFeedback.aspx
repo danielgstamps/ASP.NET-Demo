@@ -13,16 +13,15 @@
         <p><br/><br/></p>
     </header>
     <section>
-        <form id="form1" runat="server" defaultfocus="txtCustomerId">
-            
+        <form id="form1" runat="server" defaultfocus="txtCustomerId">           
             <asp:Label ID="lblCustomerId" runat="server" Text="Customer ID:"></asp:Label>
             <br />
             <asp:TextBox ID="txtCustomerId" runat="server" MaxLength="5" TextMode="Number" Width="71px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
             <asp:Button ID="btnGetFeedback" runat="server" OnClick="btnGetFeedback_Click" Text="Get Feedback" ValidationGroup="vlgCustomerId" />
             <br />
             <asp:RequiredFieldValidator ID="rfvCustomerId" runat="server" ControlToValidate="txtCustomerId" ErrorMessage="Please enter a valid Customer ID." ForeColor="Red" ValidationGroup="vlgCustomerId"></asp:RequiredFieldValidator>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
             <br />
             <asp:CompareValidator ID="cpvCustomerId" runat="server" ControlToValidate="txtCustomerId" ErrorMessage="Customer ID must be an integer." ForeColor="Red" Operator="DataTypeCheck" Type="Integer" ValidationGroup="vlgCustomerId"></asp:CompareValidator>
             <br />
@@ -50,8 +49,7 @@
                 <asp:ListItem Value="1">Satisfied</asp:ListItem>
                 <asp:ListItem Value="2">Neither Satisfied Nor Dissatisfied</asp:ListItem>
                 <asp:ListItem Value="3">Dissatisfied</asp:ListItem>
-            </asp:RadioButtonList>
-            
+            </asp:RadioButtonList>            
             <br />
             <asp:Label ID="lblComments" runat="server" Text="Additional Comments:"></asp:Label>
             <br />
@@ -68,14 +66,9 @@
             </asp:RadioButtonList>
             <br />
             <asp:Button ID="btnSubmit" runat="server" Enabled="False" OnClick="btnSubmit_Click" Text="Submit Feedback" ValidationGroup="vlgSubmit" Width="164px" />
-&nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="rfvFeedbackList" runat="server" ControlToValidate="lstFeedback" ErrorMessage="Please select a feedback item." ForeColor="Red" ValidationGroup="vlgSubmit"></asp:RequiredFieldValidator>
-            <br />
-            <br />
-            <br />
-            
+            &nbsp;&nbsp;&nbsp;
+            <asp:RequiredFieldValidator ID="rfvFeedbackList" runat="server" ControlToValidate="lstFeedback" ErrorMessage="Please select a feedback item." ForeColor="Red" ValidationGroup="vlgSubmit"></asp:RequiredFieldValidator>           
         </form>
-    </section>
-    
+    </section>   
 </body>
 </html>

@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Web;
 
 /// <summary>
 /// Summary description for Customer
@@ -97,13 +94,4 @@ public class Customer
             this._email = value;
         }
     } 
-
-
-
-	public Customer()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
 }

@@ -13,16 +13,13 @@
         <p><br/><br/></p>
     </header>
     <section>
-        <form id="form1" runat="server">
-        
+        <form id="form1" runat="server">       
             Select a Customer:<br />
             <asp:DropDownList ID="ddlCustomer" runat="server" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="Name" AutoPostBack="True">
             </asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" ProviderName="<%$ ConnectionStrings:DBConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Customer]"></asp:SqlDataSource>
-            <br />
-        
-            <br />
-        
+            <br />       
+            <br />      
             <asp:Table ID="Table1" runat="server">
                 <asp:TableRow runat="server">
                     <asp:TableCell runat="server"> CustomerID: </asp:TableCell>
@@ -81,7 +78,6 @@
             <br />
             <asp:Button ID="btnViewContacts" runat="server" Text="View Contact List" OnClick="btnViewContacts_Click" />
         </form>
-    </section>
-  
+    </section> 
 </body>
 </html>

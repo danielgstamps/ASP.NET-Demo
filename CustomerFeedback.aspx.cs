@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class CustomerFeedback : System.Web.UI.Page
+public partial class CustomerFeedback : Page
 {
     private List<Feedback> _feedbackList;
 
@@ -40,7 +37,7 @@ public partial class CustomerFeedback : System.Web.UI.Page
             };
 
             this._feedbackList.Add(feedback);
-        };
+        }
     }
 
     private void DisplayFeedbackList()
