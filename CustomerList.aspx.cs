@@ -4,10 +4,21 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Web.UI;
 
+/// <author> Daniel Stamps </author>
+/// <version> 2/5/2015 </version>
+
 public partial class CustomerList : Page
 {
+    /// <summary>
+    /// The _selected customer
+    /// </summary>
     private Customer _selectedCustomer;
 
+    /// <summary>
+    /// Handles the Load event of the Page control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
@@ -18,6 +29,10 @@ public partial class CustomerList : Page
         this.DisplayCustomerData();
     }
 
+    /// <summary>
+    /// Gets the selected customer.
+    /// </summary>
+    /// <returns></returns>
     private Customer GetSelectedCustomer()
     {
         var customerTable = (DataView) this.SqlDataSource1.Select(DataSourceSelectArguments.Empty);
@@ -41,6 +56,9 @@ public partial class CustomerList : Page
         return customer;
     }
 
+    /// <summary>
+    /// Displays the customer data.
+    /// </summary>
     private void DisplayCustomerData()
     {
         this._selectedCustomer = this.GetSelectedCustomer();
@@ -54,6 +72,11 @@ public partial class CustomerList : Page
         this.lblEmail.Text = this._selectedCustomer.Email;
     }
 
+    /// <summary>
+    /// Handles the Click event of the btnAddContact control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnAddContact_Click(object sender, EventArgs e)
     {
         var customers = CustomerCollection.GetCustomers();
@@ -66,10 +89,16 @@ public partial class CustomerList : Page
         }
 
         customers.AddItem(this._selectedCustomer);
+
         this.lblMessage.ForeColor = Color.Green;
         this.lblMessage.Text = this._selectedCustomer.Name + " successfully added to the Contact List.";
     }
 
+    /// <summary>
+    /// Handles the Click event of the btnViewContacts control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnViewContacts_Click(object sender, EventArgs e)
     {
         Response.Redirect("ContactList.aspx");

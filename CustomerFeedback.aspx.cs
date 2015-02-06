@@ -6,15 +6,29 @@ using System.Drawing;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+/// <author> Daniel Stamps </author>
+/// <version> 2/5/2015 </version>
+
 public partial class CustomerFeedback : Page
 {
+    /// <summary>
+    /// The _feedback list
+    /// </summary>
     private List<Feedback> _feedbackList;
 
+    /// <summary>
+    /// Handles the Load event of the Page control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void Page_Load(object sender, EventArgs e)
     {
         this._feedbackList = new List<Feedback>();
     }
 
+    /// <summary>
+    /// Gets the selected customer feedback and adds it to the feedback list.
+    /// </summary>
     private void GetSelectedCustomerFeedback()
     {
         var feedbackTable = (DataView) this.SqlDataSource1.Select(DataSourceSelectArguments.Empty);
@@ -40,6 +54,9 @@ public partial class CustomerFeedback : Page
         }
     }
 
+    /// <summary>
+    /// Displays the feedback list.
+    /// </summary>
     private void DisplayFeedbackList()
     {
         if (this._feedbackList.Count == 0)
@@ -62,6 +79,9 @@ public partial class CustomerFeedback : Page
         SetFocus(this.lstFeedback);
     }
 
+    /// <summary>
+    /// Enables the controls.
+    /// </summary>
     private void EnableControls()
     {
         this.rblServiceTime.Enabled = true;
@@ -73,6 +93,9 @@ public partial class CustomerFeedback : Page
         this.btnSubmit.Enabled = true;
     }
 
+    /// <summary>
+    /// Disables the controls.
+    /// </summary>
     private void DisableControls()
     {
         this.rblServiceTime.Enabled = false;
@@ -91,6 +114,11 @@ public partial class CustomerFeedback : Page
         this.rblMethod.ClearSelection();
     }
 
+    /// <summary>
+    /// Handles the Click event of the btnGetFeedback control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnGetFeedback_Click(object sender, EventArgs e)
     {       
         this.DisableControls();
@@ -99,7 +127,11 @@ public partial class CustomerFeedback : Page
         this.DisplayFeedbackList();     
     }
 
-
+    /// <summary>
+    /// Handles the Click event of the btnSubmit control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnSubmit_Click(object sender, EventArgs e)
     {
         try
