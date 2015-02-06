@@ -1,20 +1,60 @@
 ﻿using System;
 using System.Diagnostics;
 
+/// <author> Daniel Stamps </author>
+/// <version> 2/5/2015 </version>
+
 /// <summary>
 /// Summary description for Description
 /// </summary>
 public class Description
 {
+    /// <summary>
+    /// The _customer identifier
+    /// </summary>
     private int _customerId;
+
+    /// <summary>
+    /// The _feedback identifier
+    /// </summary>
     private int _feedbackId;
+
+    /// <summary>
+    /// The _service time
+    /// </summary>
     private int _serviceTime;
+
+    /// <summary>
+    /// The _efficiency
+    /// </summary>
     private int _efficiency;
+
+    /// <summary>
+    /// The _resolution
+    /// </summary>
     private int _resolution;
+
+    /// <summary>
+    /// The _comments
+    /// </summary>
     private String _comments;
+
+    /// <summary>
+    /// The _contact
+    /// </summary>
     private bool _contact;
+
+    /// <summary>
+    /// The _contact method
+    /// </summary>
     private String _contactMethod;
 
+    /// <summary>
+    /// Gets or sets the customer identifier.
+    /// </summary>
+    /// <value>
+    /// The customer identifier.
+    /// </value>
     public int CustomerId
     {
         get { return this._customerId; }
@@ -25,6 +65,12 @@ public class Description
         }
     }
 
+    /// <summary>
+    /// Gets or sets the feedback identifier.
+    /// </summary>
+    /// <value>
+    /// The feedback identifier.
+    /// </value>
     public int FeedbackId
     {
         get { return this._feedbackId; }
@@ -35,6 +81,12 @@ public class Description
         }
     }
 
+    /// <summary>
+    /// Gets or sets the service time.
+    /// </summary>
+    /// <value>
+    /// The service time.
+    /// </value>
     public int ServiceTime
     {
         get { return this._serviceTime; }
@@ -45,6 +97,12 @@ public class Description
         }
     }
 
+    /// <summary>
+    /// Gets or sets the efficiency.
+    /// </summary>
+    /// <value>
+    /// The efficiency.
+    /// </value>
     public int Efficiency
     {
         get { return this._efficiency; }
@@ -55,6 +113,12 @@ public class Description
         }
     }
 
+    /// <summary>
+    /// Gets or sets the resolution.
+    /// </summary>
+    /// <value>
+    /// The resolution.
+    /// </value>
     public int Resolution
     {
         get { return this._resolution; }
@@ -65,6 +129,12 @@ public class Description
         }
     }
 
+    /// <summary>
+    /// Gets or sets the comments.
+    /// </summary>
+    /// <value>
+    /// The comments.
+    /// </value>
     public String Comments
     {
         get { return this._comments; }
@@ -75,6 +145,12 @@ public class Description
         }
     }
 
+    /// <summary>
+    /// Gets or sets a value indicating whether this <see cref="Description"/> is contact.
+    /// </summary>
+    /// <value>
+    ///   <c>true</c> if contact; otherwise, <c>false</c>.
+    /// </value>
     public bool Contact
     {
         get { return this._contact; }
@@ -85,6 +161,12 @@ public class Description
         }
     }
 
+    /// <summary>
+    /// Gets or sets the contact method.
+    /// </summary>
+    /// <value>
+    /// The contact method.
+    /// </value>
     public String ContactMethod
     {
         get { return this._contactMethod; }
