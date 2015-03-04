@@ -155,7 +155,7 @@ public partial class CustomerFeedback : Page
         catch (Exception)
         {
             this.lblMessage.ForeColor = Color.Red;
-            this.lblMessage.Text = "Error creating Description object; invalid data.";
+            this.lblMessage.Text = "Please choose an option for each feedback category.";
         }
     }
 }
