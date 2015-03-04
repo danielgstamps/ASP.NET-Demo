@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Home"  description="BallGames Home Page">
+
+    <siteMapNode title="Customer Support"  description="Leave feedback or contact us">
+      <siteMapNode url="CustomerFeedback.aspx" title="Feedback Confirmation" description="Leave feedback" />
+      <siteMapNode url="ContactUs.aspx" title="Contact Us" description="Contact us" />
+    </siteMapNode>
+
+    <siteMapNode title="Administration" description="Customers and Contacts">
+      <siteMapNode url="CustomerList.aspx" title="Display Customers" description="Customer list" />
+      <siteMapNode url="ContactList.aspx" title="Display Contacts" description="Contact list" />
+    </siteMapNode>
+
+    <siteMapNode url="SiteMap.aspx" title="Site Map" description="Site Navigation" />
+  </siteMapNode>
+</siteMap>
