@@ -92,15 +92,7 @@ public partial class CustomerList : Page
 
         this.lblMessage.ForeColor = Color.Green;
         this.lblMessage.Text = this._selectedCustomer.Name + " successfully added to the Contact List.";
-    }
 
-    /// <summary>
-    /// Handles the Click event of the btnViewContacts control.
-    /// </summary>
-    /// <param name="sender">The source of the event.</param>
-    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
-    protected void btnViewContacts_Click(object sender, EventArgs e)
-    {
         Response.Redirect("ContactList.aspx");
     }
 }

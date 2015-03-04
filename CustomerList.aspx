@@ -74,9 +74,6 @@
             <asp:Button ID="btnAddContact" runat="server" OnClick="btnAddContact_Click" Text="Add to Contacts" />
             &nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
-            <br />
-            <br />
-            <asp:Button ID="btnViewContacts" runat="server" Text="View Contact List" OnClick="btnViewContacts_Click" />
         </form>
     </section> 
 </body>
