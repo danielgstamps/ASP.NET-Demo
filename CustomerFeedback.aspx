@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Customer Feedback" MasterPageFile="Site.master" Language="C#" AutoEventWireup="true" CodeFile="CustomerFeedback.aspx.cs" Inherits="CustomerFeedback" %>
 
-<asp:Content ID="customerFeedbackContent" ContentPlaceHolderID="bodyPlaceHolder" runat="server">        
+<asp:Content ID="customerFeedbackContent" ContentPlaceHolderID="bodyPlaceHolder" runat="server">
+    <h1> Customer Feedback </h1>        
     <asp:Label ID="lblCustomerId" runat="server" Text="Customer ID:"></asp:Label>
     <br />
     <asp:TextBox ID="txtCustomerId" runat="server" MaxLength="5" TextMode="Number" Width="71px"></asp:TextBox>

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Customer List" MasterPageFile="Site.master" Language="C#" AutoEventWireup="true" CodeFile="CustomerList.aspx.cs" Inherits="CustomerList" %>
 
 <asp:Content ID="customerListContent" ContentPlaceHolderID="bodyPlaceHolder" runat="server">   
+    <h1> Customer List </h1>
     Select a Customer:<br />
     <asp:DropDownList ID="ddlCustomer" runat="server" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="Name" AutoPostBack="True">
     </asp:DropDownList>

@@ -39,6 +39,7 @@
     <footer>
         <br/>
         <br/>
+        <br/>
         Please contact us at 88-BallGame or email 
         <asp:HyperLink ID="hlContactEmail" runat="server" NavigateUrl="mailto:info@ballgame.com">info@ballgame.com</asp:HyperLink>
     </footer>

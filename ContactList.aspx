@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Contact List" MasterPageFile="Site.master" Language="C#" AutoEventWireup="true" CodeFile="ContactList.aspx.cs" Inherits="ContactList" %>
 
 <asp:Content ID="contactListContent" ContentPlaceHolderID="bodyPlaceHolder" runat="server">
+    <h1> Contact List </h1>
     <asp:Label ID="lblContacts" runat="server" Text="Contacts:"></asp:Label>
     <br />
     <asp:ListBox ID="lstContacts" runat="server" Height="164px" Width="404px">

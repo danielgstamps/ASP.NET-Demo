@@ -3,7 +3,7 @@
   <siteMapNode url="Default.aspx" title="Home"  description="BallGames Home Page">
 
     <siteMapNode title="Customer Support"  description="Leave feedback or contact us">
-      <siteMapNode url="CustomerFeedback.aspx" title="Feedback Confirmation" description="Leave feedback" />
+      <siteMapNode url="CustomerFeedback.aspx" title="Customer Feedback" description="Leave feedback" />
       <siteMapNode url="ContactUs.aspx" title="Contact Us" description="Contact us" />
     </siteMapNode>
 
