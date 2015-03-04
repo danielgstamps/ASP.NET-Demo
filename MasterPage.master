@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>Stamps Project02</title>
+    <link href="Styles/Styles.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+    <header>
+        <h1>Digital Upscale Manager for Ballgames</h1>
+        <h2>Managing Ballgames with Technology</h2>
+    </header>
+
+    <section>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder id="bodyContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    </section>
+    
+    <footer>
+        Please contact us at 88-BallGame or email 
+        <asp:HyperLink ID="hlContactEmail" runat="server" NavigateUrl="mailto:info@ballgame.com">info@ballgame.com</asp:HyperLink>
+    </footer>
+
+</body>
+</html>
