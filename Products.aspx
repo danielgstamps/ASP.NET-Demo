@@ -2,7 +2,6 @@
 
 <asp:Content ID="ProductContent" ContentPlaceHolderID="bodyPlaceHolder" Runat="Server">
     <h1>Product Maintenance</h1>
-    <p>Software in database:</p>
     <asp:GridView ID="gvProducts" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="SoftwareID" DataSourceID="sdsProducts" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
@@ -30,7 +29,7 @@
                 <EditItemTemplate>
                     <asp:TextBox ID="txtEditReleaseDate" runat="server" Text='<%# Bind("ReleaseDate") %>'></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvEditReleaseDate" runat="server" ControlToValidate="txtEditReleaseDate" ErrorMessage="Release Date is a required field." ForeColor="Red" ValidationGroup="vgEdit">*</asp:RequiredFieldValidator>
-                    <asp:CompareValidator ID="cvEditReleaseDate" runat="server" ControlToValidate="txtEditReleaseDate" ErrorMessage="Release Date must be a valid date." ForeColor="Red" Operator="DataTypeCheck" Type="Date" ValidationGroup="vgEdit">*</asp:CompareValidator>
+                    <asp:CompareValidator ID="cvEditReleaseDate" runat="server" ControlToValidate="txtEditReleaseDate" ErrorMessage="Release Date must be a valid date. (Try removing the timestamp)" ForeColor="Red" Operator="DataTypeCheck" Type="Date" ValidationGroup="vgEdit">*</asp:CompareValidator>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label3" runat="server" Text='<%# Bind("ReleaseDate") %>'></asp:Label>
@@ -68,9 +67,10 @@
     </asp:SqlDataSource>
     <br />
     <asp:ValidationSummary ID="vsEdit" runat="server" ForeColor="Red" HeaderText="Please correct the following errors:" ValidationGroup="vgEdit" />
-    <br />
-    Add a new Product:<br />
-    <br />
+    
+    <h1>Add a new Product:</h1>
+    <asp:Label ID="lblInsertResult" runat="server"></asp:Label>
+    <br/>
     <table>
         <tr>
             <td class="auto-style1">Software ID:</td>
@@ -104,7 +104,7 @@
         </tr>
         <tr>
             <td class="auto-style1"> </td>
-            <td><asp:Button ID="btnAddSoftware" runat="server" Text="Add Software" Width="166px" ValidationGroup="vgInsert" /></td>
+            <td><asp:Button ID="btnAddSoftware" runat="server" Text="Add Software" Width="153px" OnClick="btnAddSoftware_Click" ValidationGroup="vgInsert" Height="28px" /></td>
         </tr>
     </table>
     <br/>
