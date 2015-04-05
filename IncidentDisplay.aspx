@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="IncidentDisplay.aspx.cs" Inherits="IncidentDisplay" %>
+﻿<%@ Page Title="Incident Display" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="IncidentDisplay.aspx.cs" Inherits="IncidentDisplay" %>
 
 <asp:Content ID="IncidentDisplayBodyContent" ContentPlaceHolderID="bodyPlaceHolder" Runat="Server">
     <h1> Incident Maintenance</h1>
