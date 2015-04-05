@@ -12,6 +12,12 @@
       <siteMapNode url="ContactList.aspx" title="Display Contacts" description="Contact list" />
     </siteMapNode>
 
+    <siteMapNode title="Maintenance" description="Edit the BallGames databases (Employees only)">
+      <siteMapNode url="CustomerMaintenance.aspx" title="Maintain Customers" description="Customer maintenance"/>
+      <siteMapNode url="Products.aspx" title="Maintain Software" description="Software maintenance"/>
+      <siteMapNode url="IncidentDisplay.aspx" title="Maintain Incidents" description="Incident maintenance"/>
+    </siteMapNode>            
+
     <siteMapNode url="SiteMap.aspx" title="Site Map" description="Site Navigation" />
   </siteMapNode>
 </siteMap>
