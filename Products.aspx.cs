@@ -43,6 +43,7 @@ public partial class Products : System.Web.UI.Page
             case 0:
                 this.lblInsertResult.ForeColor = Color.Red;
                 this.lblInsertResult.Text = "Error adding new software to database: Duplicate SoftwareID.";
+                Page.SetFocus(this.txtInsertID);
                 break;
             case 1:
                 this.gvProducts.DataBind();
