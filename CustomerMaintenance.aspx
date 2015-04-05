@@ -48,10 +48,12 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Address" SortExpression="Address">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("Address") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtEditAddress" runat="server" Text='<%# Bind("Address") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditAddress" runat="server" ControlToValidate="txtEditAddress" ErrorMessage="Address is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </EditItemTemplate>
                 <InsertItemTemplate>
-                    <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("Address") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtInsertAddress" runat="server" Text='<%# Bind("Address") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertAddress" runat="server" ControlToValidate="txtInsertAddress" ErrorMessage="Address is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </InsertItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label2" runat="server" Text='<%# Bind("Address") %>'></asp:Label>
@@ -59,10 +61,12 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="City" SortExpression="City">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("City") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtEditCity" runat="server" Text='<%# Bind("City") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditCity" runat="server" ControlToValidate="txtEditCity" ErrorMessage="City is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </EditItemTemplate>
                 <InsertItemTemplate>
-                    <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("City") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtInsertCity" runat="server" Text='<%# Bind("City") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertCity" runat="server" ControlToValidate="txtInsertCity" ErrorMessage="City is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </InsertItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label3" runat="server" Text='<%# Bind("City") %>'></asp:Label>
@@ -70,10 +74,12 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="State" SortExpression="State">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("State") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtEditState" runat="server" Text='<%# Bind("State") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditState" runat="server" ControlToValidate="txtEditState" ErrorMessage="State is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </EditItemTemplate>
                 <InsertItemTemplate>
-                    <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("State") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtInsertState" runat="server" Text='<%# Bind("State") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertState" runat="server" ControlToValidate="txtInsertState" ErrorMessage="State is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </InsertItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label4" runat="server" Text='<%# Bind("State") %>'></asp:Label>
@@ -81,10 +87,12 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="ZipCode" SortExpression="ZipCode">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("ZipCode") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtEditZipCode" runat="server" Text='<%# Bind("ZipCode") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditZipCode" runat="server" ControlToValidate="txtEditZipCode" ErrorMessage="ZipCode is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </EditItemTemplate>
                 <InsertItemTemplate>
-                    <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("ZipCode") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtInsertZipCode" runat="server" Text='<%# Bind("ZipCode") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertZipCode" runat="server" ControlToValidate="txtInsertZipCode" ErrorMessage="ZipCode is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </InsertItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label5" runat="server" Text='<%# Bind("ZipCode") %>'></asp:Label>
@@ -92,10 +100,12 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Phone" SortExpression="Phone">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Phone") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtEditPhone" runat="server" Text='<%# Bind("Phone") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditPhone" runat="server" ControlToValidate="txtEditPhone" ErrorMessage="Phone is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </EditItemTemplate>
                 <InsertItemTemplate>
-                    <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Phone") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtInsertPhone" runat="server" Text='<%# Bind("Phone") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertPhone" runat="server" ControlToValidate="txtInsertPhone" ErrorMessage="Phone is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </InsertItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label6" runat="server" Text='<%# Bind("Phone") %>'></asp:Label>
@@ -103,10 +113,12 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Email" SortExpression="Email">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("Email") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtEditEmail" runat="server" Text='<%# Bind("Email") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditEmail" runat="server" ControlToValidate="txtEditEmail" ErrorMessage="Email is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </EditItemTemplate>
                 <InsertItemTemplate>
-                    <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("Email") %>'></asp:TextBox>
+                    <asp:TextBox ID="txtInsertEmail" runat="server" Text='<%# Bind("Email") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertEmail" runat="server" ControlToValidate="txtInsertEmail" ErrorMessage="Email is a required field." ForeColor="Red">*</asp:RequiredFieldValidator>
                 </InsertItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label7" runat="server" Text='<%# Bind("Email") %>'></asp:Label>
