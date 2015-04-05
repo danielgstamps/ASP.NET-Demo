@@ -29,7 +29,6 @@
             <StaticSelectedStyle BackColor="#507CD1" />
         </asp:Menu>
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-        <br/>
 
         <asp:ContentPlaceHolder id="bodyPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
@@ -37,7 +36,6 @@
     </section>
     
     <footer>
-        <br/>
         <br/>
         <br/>
         Please contact us at 88-BallGame or email 
