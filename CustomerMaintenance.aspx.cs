@@ -35,7 +35,7 @@ public partial class CustomerMaintenance : System.Web.UI.Page
             e.ExceptionHandled = true;
             e.KeepInInsertMode = true;
             this.lblDetailsResult.ForeColor = Color.Red;
-            this.lblDetailsResult.Text = "There was a problem inserting this Customer.";
+            this.lblDetailsResult.Text = "Could not insert Customer: Concurrent database modification.";
             return;
         }
 
@@ -56,7 +56,7 @@ public partial class CustomerMaintenance : System.Web.UI.Page
             e.ExceptionHandled = true;
             e.KeepInEditMode = true;
             this.lblDetailsResult.ForeColor = Color.Red;
-            this.lblDetailsResult.Text = "There was a problem updating this Customer.";
+            this.lblDetailsResult.Text = "Could not update Customer: Concurrent database modification.";
             return;
         }
 
@@ -76,7 +76,7 @@ public partial class CustomerMaintenance : System.Web.UI.Page
         {
             e.ExceptionHandled = true;
             this.lblDetailsResult.ForeColor = Color.Red;
-            this.lblDetailsResult.Text = "There was a problem deleting this Customer.";
+            this.lblDetailsResult.Text = "Could not delete Customer: Concurrent database modification.";
             return;
         }
 
