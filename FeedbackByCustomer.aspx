@@ -1,7 +1,7 @@
-﻿<%@ Page Title="Incident Display" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="IncidentDisplay.aspx.cs" Inherits="IncidentDisplay" %>
+﻿<%@ Page Title="Incident Display" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="FeedbackByCustomer.aspx.cs" Inherits="IncidentDisplay" %>
 
 <asp:Content ID="IncidentDisplayBodyContent" ContentPlaceHolderID="bodyPlaceHolder" Runat="Server">
-    <h1> Incident Maintenance</h1>
+    <h1> Display Feedback by Customer</h1>
     Select a Customer to view related incidents:<br />
     <br />
     <asp:DropDownList ID="ddlCustomers" runat="server" AutoPostBack="True" DataSourceID="sdsBallGamesDataSource" DataTextField="Name" DataValueField="CustomerID">

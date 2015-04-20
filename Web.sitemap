@@ -3,7 +3,7 @@
   <siteMapNode url="Default.aspx" title="Home"  description="BallGames Home Page">
 
     <siteMapNode title="Customer Support"  description="Leave feedback or contact us">
-      <siteMapNode url="CustomerFeedback.aspx" title="Customer Feedback" description="Leave feedback" />
+      <siteMapNode url="CustomerFeedback.aspx" title="Complete Customer Survey" description="Leave feedback" />
       <siteMapNode url="ContactUs.aspx" title="Contact Us" description="Contact us" />
     </siteMapNode>
 
@@ -15,9 +15,13 @@
     <siteMapNode title="Maintenance" description="Edit the BallGames databases (Employees only)">
       <siteMapNode url="CustomerMaintenance.aspx" title="Maintain Customers" description="Customer maintenance"/>
       <siteMapNode url="Products.aspx" title="Maintain Software" description="Software maintenance"/>
-      <siteMapNode url="IncidentDisplay.aspx" title="Maintain Incidents" description="Incident maintenance"/>
-    </siteMapNode>            
+      <siteMapNode url="MaintainSupport.aspx" title="Maintain Support Staff" description="Incident maintenance"/>
+    </siteMapNode>
 
+    <siteMapNode title="Feedback" description="View BallGames Feedback" >
+      <siteMapNode url="FeedbackByCustomer.aspx" title="Display Feedback by Customer" description="Use a Customer ID to find Feedback" />
+    </siteMapNode>
+    
     <siteMapNode url="SiteMap.aspx" title="Site Map" description="Site Navigation" />
   </siteMapNode>
 </siteMap>
